@@ -4,7 +4,7 @@
   --green-light: #e6efe8;
   --green-dark: #4f6f58;
   --text-main: #333;
-  --bg-base: #f7f7f5;
+  --bg-base: #f4f5f2;
 }
 
 /* ===== 全体 ===== */
@@ -13,14 +13,19 @@ body {
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
   background: var(--bg-base);
   color: var(--text-main);
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 /* ===== ヘッダー ===== */
 header {
-  padding: 30px 10%;
+  padding: 32px 10%;
   background: white;
   border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 1.8em;
 }
 
 nav a {
@@ -28,6 +33,7 @@ nav a {
   text-decoration: none;
   color: var(--green-dark);
   font-size: 0.95em;
+  letter-spacing: 0.05em;
 }
 
 /* ===== セクション ===== */
@@ -43,10 +49,28 @@ nav a {
   background: var(--green-light);
 }
 
+/* ===== 見出し ===== */
+h2 {
+  color: var(--green-dark);
+  border-bottom: 2px solid #d6e2da;
+  padding-bottom: 6px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+/* ===== カード ===== */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
 /* ===== ボタン ===== */
 .btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 12px 30px;
   border: 2px solid var(--green-main);
   color: var(--green-main);
   text-decoration: none;
@@ -60,21 +84,6 @@ nav a {
   color: white;
 }
 
-/* ===== カード ===== */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  margin-bottom: 30px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
 /* ===== お知らせ ===== */
 .news-item {
   border-bottom: 1px solid #ccc;
@@ -83,5 +92,13 @@ nav a {
 
 .news-item span {
   font-size: 0.9em;
+  color: #666;
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 0.85em;
   color: #666;
 }
