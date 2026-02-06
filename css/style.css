@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Yu Mincho", serif;
+  background: #f4f4f2;
+  color: #333;
+}
+
+header {
+  padding: 30px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  padding: 80px;
+  text-align: center;
+  background: #e8efe8;
+}
