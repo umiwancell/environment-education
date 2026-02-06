@@ -1,12 +1,24 @@
-body {
-  margin: 0;
-  font-family: "Yu Mincho", serif;
-  background: #f4f4f2;
-  color: #333;
+/* ===== 色の設定（ここだけ変えれば全体が変わる） ===== */
+:root {
+  --green-main: #6b8f71;
+  --green-light: #e6efe8;
+  --green-dark: #4f6f58;
+  --text-main: #333;
+  --bg-base: #f7f7f5;
 }
 
+/* ===== 全体 ===== */
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  background: var(--bg-base);
+  color: var(--text-main);
+  line-height: 1.8;
+}
+
+/* ===== ヘッダー ===== */
 header {
-  padding: 30px;
+  padding: 30px 10%;
   background: white;
   border-bottom: 1px solid #ddd;
 }
@@ -14,11 +26,62 @@ header {
 nav a {
   margin-right: 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--green-dark);
+  font-size: 0.95em;
 }
 
-.hero {
-  padding: 80px;
-  text-align: center;
-  background: #e8efe8;
+/* ===== セクション ===== */
+.section {
+  padding: 80px 10%;
+}
+
+.section.light {
+  background: white;
+}
+
+.section.green {
+  background: var(--green-light);
+}
+
+/* ===== ボタン ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid var(--green-main);
+  color: var(--green-main);
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--green-main);
+  color: white;
+}
+
+/* ===== カード ===== */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== お知らせ ===== */
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.news-item span {
+  font-size: 0.9em;
+  color: #666;
 }
